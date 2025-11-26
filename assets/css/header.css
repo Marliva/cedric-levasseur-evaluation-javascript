@@ -21,6 +21,9 @@ nav #navIcons {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    i{
+        cursor: pointer;
+    }
 }
 
 #cart {

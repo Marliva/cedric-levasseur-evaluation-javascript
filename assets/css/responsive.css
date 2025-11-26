@@ -33,6 +33,9 @@
     
     #menuAllCategories {
         width: 17%;
+        i{
+            cursor: pointer;
+        }
     }
     
     #menuDesktop {
