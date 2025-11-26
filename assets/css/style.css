@@ -1,2 +1,17 @@
+/* Import des différents fichiers css pour plus de clarté dans chaque fichier */
 @import url("./reset.css");
 @import url("./responsive.css");
+@import url("./header.css");
+@import url("./main.css");
+@import url("./footer.css");
+
+/*Je fais les variables pour les couleurs que l'on utilisera*/
+:root {
+    --primary: #FFB700;
+    --orangeLight: #FFD480;
+    --secondary: #2A2C2D;
+    --light: #959595;
+    --success: #63A464;
+    --white: #fff;
+    --black: #000;
+}
