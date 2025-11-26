@@ -1,0 +1,218 @@
+/*Exclusive Products*/
+
+#productsFilter {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--black);
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #filter {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        p:nth-child(1) {
+            color: var(--primary);
+            cursor: pointer;
+        }
+    }
+}
+
+/*cards des produits de Exclusive Products*/
+#exclusiveProducts,
+#dotdProducts {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+#card {
+    margin-top: 1rem;
+}
+
+#cardImg {
+    position: relative;
+}
+
+#cardImg #soldout,
+#sale {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--primary);
+    color: var(--white);
+    padding: .2rem .8rem;
+    text-transform: uppercase;
+}
+
+#cardImg p {
+    margin-top: .2rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+#price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#price h3 {
+    margin-top: .2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+#price h4 {
+    margin-top: .2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: line-through;
+}
+
+#price h5 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--success);
+}
+
+#rate {
+    margin-top: .2rem;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+
+    i {
+        font-size: 1.2rem;
+        color: var(--primary);
+    }
+}
+
+#sale {
+    background-color: var(--success);
+}
+
+/*Deal Of The Days*/
+/*J'ai préféré le séparer du css de Exclusive Products puisqu'il n'avait pas les mêmes enfants. Désolé pour le DRY !*/
+#dealOfTheDays {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--black);
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+
+    #timeLeft {
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+
+        i {
+            font-size: 1.2rem;
+            color: var(--primary);
+        }
+    }
+}
+
+/*Our Brands*/
+/*Comme au-dessus, pas les mêmes enfants, donc je le fait à part, même si répétitif*/
+#ourBrands {
+    width: 96%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--black);
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
+}
+
+#partners {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 32%;
+}
+
+/*Newsletter*/
+#newsletterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 25vh;
+    background-color: var(--primary);
+}
+
+#newsletter {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+}
+
+#newsletterTitle {
+    width: 52%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    i {
+        font-size: 4rem;
+    }
+
+    p {
+        font-size: 2rem;
+        text-transform: capitalize;
+    }
+}
+
+#formulaire {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    padding: .2rem;
+}
+
+#formulaire form {
+    display: flex;
+    align-items: center;
+    input {
+        padding: .5rem;
+        border: none;
+        font-size: 1rem;
+    }
+
+    button {
+        padding: .5rem 1rem;
+        border: none;
+        background-color: var(--black);
+        color: var(--white);
+        font-size: 1rem;
+    }
+}
