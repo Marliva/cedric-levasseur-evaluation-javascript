@@ -1,0 +1,59 @@
+/* Style pour le bouton Shop Now */
+#shopNow {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+#card {
+    transition: background-color 0.3s ease;
+}
+
+#cardImg {
+    position: relative;
+}
+
+/* Overlay noir sur l'image au hover */
+#cardImg::before {
+    content: ''; /* Je mets ça pour créer le pseudo-élément qui va prendre la place de la card */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+#card:hover #cardImg::before {
+    opacity: 1;
+}
+
+#card:hover #shopNow {
+    opacity: 1;
+}
+
+#shopNow button {
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--orangeLight);
+    color: var(--white);
+    border: none;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#shopNow button:hover {
+    background-color: var(--black);
+    color: var(--white);
+}
