@@ -36,7 +36,7 @@
                 <img src="./assets/img/logo_light.avif" alt="">
             </h1>
             <div id="burger">
-                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-bars"></i> <!-- disparait en desktop -->
             </div>
             <div id="user">
                 <i class="fa-solid fa-user"></i>
@@ -54,6 +54,15 @@
             <div id="menuAllCategories">
                 <i class="fa-solid fa-bars"></i>
                 <p>All Categories</p>
+            </div>
+            <div id="menuDesktop"> <!-- N'apparait pas en mobile -->
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>Pages</li>
+                    <li>Blog</li>
+                    <li>Contact Us</li>
+                </ul>
             </div>
             <div id="phoneNumber">
                 <i class="fa-solid fa-phone-volume"></i>
@@ -76,13 +85,277 @@
     <!-- Main -->
     <main>
 
+        <!-- Exclusive Products -->
+        <div id="productsFilter">
+            <h2>Exclusive Products</h2>
+            <div id="filter">
+                <p>Brake Disc</p>
+                <p>Replica Wheels</p>
+                <p>Steel Rim</p>
+            </div>
+        </div> <!-- Mettre une bordure inférieure noire -->
 
+        <!-- cards des produits de Exclusive Products -->
+        <section id="exclusiveProducts">
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/BrakeDiscforBMW.webp" alt="">
+                    <span id="soldout">Soldout</span>
+                    <p>Zbrake Disc For BMW</p>
+                    <h3>$19.00</h3>
+                    <h4>$29.00</h4>
+                    <h5>-34%</h5>
+                    <div id="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/BrakePadsforChevrolet.webp" alt="">
+                    <p>Brake Pads For Chevrolet</p>
+                    <h3>$39.00</h3>
+                    <div id="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/V6EnginePiston.webp" alt="">
+                    <p>V6 Engine Piston</p>
+                    <h3>$79.00</h3>
+                    <div id="rate">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/BrakeDiscforBMW.webp" alt="">
+                    <span id="sale">Sale</span>
+                    <p>Steering Wheel Cover</p>
+                    <h3>$39.00</h3>
+                    <h4>$60.00</h4>
+                    <h5>-35%</h5>
+                    <div id="rate">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Deal Of The Days -->
+        <div id="dealOfTheDays">
+            <h2>Deal Of The Days</h2>
+            <div id="timeLeft">
+                <i class="fa-regular fa-clock"></i>
+                <p>00 : 00 : 00</p>
+            </div>
+        </div> <!-- Mettre une bordure inférieure noire -->
+
+        <!-- cards des produits de Deal Of The Days -->
+        <section id="dotdProducts">
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/DOEReplica.webp" alt="">
+                    <p>DOE Replica</p>
+                    <h3>$129.00</h3>
+                    <div id="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/SteeringWheelCover.webp" alt="">
+                    <p>Steering Wheel Cover</p>
+                    <h3>$25.00</h3>
+                    <div id="rate">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/BrakeDiscforBMW.webp" alt="">
+                    <span id="sale">Sale</span>
+                    <p>Steering Wheel Cover</p>
+                    <h3>$39.00</h3>
+                    <h4>$60.00</h4>
+                    <h5>-35%</h5>
+                    <div id="rate">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div id="card">
+                <div id="cardImg">
+                    <img src="./assets/img/V6EnginePiston.webp" alt="">
+                    <p>V6 Engine Piston</p>
+                    <h3>$79.00</h3>
+                    <div id="rate">
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Our Brands -->
+        <div id="ourBrands">
+            <h2>Our Brands</h2>
+        </div> <!-- Mettre une bordure inférieure noire -->
+
+        <!-- Logos des partenaires -->
+        <section id="partners"> <!-- flex wrap et width 30% pour chaque logo -->
+            <div id="logo">
+                <img src="./assets/img/partner1.webp" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner2.webp" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner3.webp" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner4.png" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner5.webp" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner6.webp" alt="">
+            </div>
+            <div id="logo">
+                <img src="./assets/img/partner7.webp" alt="">
+            </div>
+        </section>
+
+        <!-- Newsletter -->
+        <section id="newsletterContainer">
+            <div id="newsletter">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p>Subscribe our newsletter</p> <!-- text-transform:capitalize-->
+                <div id="formulaire">
+                    <form action="" method="post" id="form">
+                        <input type="email" placeholder="Enter Email Address">
+                        <button>subscribe</button>
+                    </form>
+                </div>
+            </div>
     </main>
 
     <!-- Footer -->
     <footer>
 
+        <!-- Logo -->
+        <div id="logoFooter">
+            <img src="./assets/img/logo_light.avif" alt="">
+        </div>
 
+        <!-- Phrase d'accroche footer -->
+        <div id="phrase">
+            <p>Be proud of your code! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est ipsum amet quasi rem
+                similique repellat ad quae eum.</p>
+        </div>
+
+        <!-- Infos -->
+        <section id="infos">
+            <div id="info1">
+                <i class="fa-regular fa-paper-plane"></i>
+                <p>123 Street, Old Trafford, New York, USA</p>
+            </div>
+            <div id="info2">
+                <i class="fa-solid fa-envelope"></i>
+                <p>info@sitename.com</p>
+            </div>
+            <div id="info3">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <p>+33 666 666 666</p>
+            </div>
+        </section>
+
+        <!-- Instagram -->
+        <section id="insta">
+            <div id="logoInsta">
+                <i class="fa-brands fa-square-instagram"></i>
+                <p>Instagram</p>
+            </div>
+
+            <div id="instaCardsContainer">
+                <div id="instaCard">
+                    <img src="./assets/img/insta1.avif" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta2.webp" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta3.avif" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta4.webp" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta5.avif" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta6.avif" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta7.webp" alt="">
+                </div>
+                <div id="instaCard">
+                    <img src="./assets/img/insta8.avif" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Copyright -->
+        <div id="copyright"> <!-- Mettre une bordure top blanche -->
+            <p>©2023 ceppic html/css/js dwwm</p> <!-- uppercase -->
+        </div>
     </footer>
 
 </body>
