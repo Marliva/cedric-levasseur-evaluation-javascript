@@ -4,12 +4,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 350px;
+    width: 20rem;
     height: 100vh;
-    background-color: white;
+    background-color: var(--white);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
     overflow-y: auto;
-    z-index: 10000;
+    z-index: 3;
     animation: slideIn 0.3s ease;
 }
 
@@ -24,24 +24,24 @@
 
 #closeMenu {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.1rem;
+    right: 1.1rem;
     background: none;
     border: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
-    color: #333;
+    color: var(--secondary);
     padding: 5px 10px;
-    z-index: 10001;
+    z-index: 4;
 }
 
 #closeMenu:hover {
-    color: #ff9800;
+    color: var(--primary);
 }
 
 #menuList {
     list-style: none;
-    padding: 70px 0 20px 0;
+    padding: 4.5rem 0 1.2rem 0;
     margin: 0;
 }
 
@@ -52,32 +52,31 @@
 .menu-main-link {
     display: flex;
     align-items: center;
-    padding: 15px 20px;
+    padding: 1rem 1.2rem;
     text-decoration: none;
-    color: #333;
+    color: var(--secondary);
     transition: background-color 0.3s ease;
     cursor: pointer;
 }
 
 .menu-main-link:hover {
-    background-color: #f5f5f5;
+    background-color: var(--orangeLight);
 }
 
 .menu-main-link img {
-    width: 30px;
-    height: 30px;
-    margin-right: 15px;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
     object-fit: contain;
 }
 
 .menu-main-link span {
     flex: 1;
     font-weight: 500;
-    font-size: 15px;
 }
 
 .menu-main-link i {
-    color: #999;
+    color: var(--secondary);
     font-size: 12px;
     transition: transform 0.3s ease;
 }
@@ -98,7 +97,7 @@
 
 .submenu.active {
     max-height: 500px;
-    padding: 10px 0;
+    padding: .8rem 0;
 }
 
 .submenu li {
@@ -107,28 +106,20 @@
 
 .submenu a {
     display: block;
-    padding: 10px 20px 10px 65px;
+    padding: .8rem 1.2rem .8rem 4rem;
     text-decoration: none;
-    color: #666;
-    font-size: 14px;
+    color: var(--secondary);
     transition: all 0.3s ease;
 }
 
 .submenu a:hover {
-    color: #ff9800;
-    background-color: #fff;
-    padding-left: 70px;
+    color: var(--primary);
+    background-color: var(--white);
+    padding-left: 4.2rem;
 }
 
 /* État actif du burger */
 #burger.active i,
 #menuAllCategories.active {
-    color: #ff9800;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    #menu {
-        width: 280px;
-    }
+    color: var(--primary);
 }
